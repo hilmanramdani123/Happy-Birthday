@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <p>Happy birthday, my favorite person! Happy level up day! Make a wish for your birthday. Tepat pada hari ini,
+            umur kamu bertambah satu tahun. Semoga rezeki kamu makin lancar dan semoga segala urusan kamu dimudahkan.
+            Aku selalu doa’in buat kamu, apapun yang kamu inginkan, semoga semua bisa terwujud, dan semoga kamu
+            sehat-sehat terus.</p>
+        <p>Aku harap di hari ulang tahun kamu ini memberi banyak kebahagiaan dan kesenangan. Aku gabisa mendeskripsikan
+            betapa berartinya kamu bagi aku. Makasih sudah hadir dan menemani aku, semoga kita tetap bersama sampai
+            kapanpun. Makasih udah percaya sama aku selama ini. Jujur, aku nggak tau harus ngetik apa lagi. Susah banget
+            ya jalan kita, wkwk, tapi satu hal yang aku percaya, kita bisa melaluinya bareng-bareng dan mendapati hal
+            yang luar biasa baiknya ke depannya nanti.</p>
+        <p>Sekali lagi, selamat ulang tahun perempuan kuat. Semoga Allah selalu memudahkan jalanmu, melancarkan segala
+            urusanmu, dan mengabulkan seluruh permintaanmu. Aamiin, Allahumma aamiin.</p>
+        <p>Semoga perasaan kamu nggak berubah sedikit pun. Tetap jadi orang baik, tetap kuat di tengah masalah apapun
+            yang akan datang ke depannya!</p>
+        <p>Mungkin aku bukan pria pertama yang membuat kamu bahagia, but <span class="highlight">I will be the boy who
+                gives you the love you deserve. The boy who makes you feel like the luckiest girl.</span>✨😘</p>
+    </div>
+
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script>
+        window.onload = function () {
+            Swal.fire({
+                title: 'Selamat ulang tahun cantik!',
+                text: 'bjir udah 21 aja nii bocah wkwkw!',
+                imageUrl: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM29jdXR5dHJ4NHQzbndtcjZhZHJpMXd4eGc3NDJ2NXliY240aWpzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MhYGO6XdrbUb19Ld1q/giphy.webp', // URL stiker dino kuning
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Happy Birthday Sticker',
+                confirmButtonText: 'Oke'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Selamat atas berkurangnya jatah hidup di dunia!',
+                        imageUrl: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTV2NHR1N3d5OWNvbDdqeWxjYnhiNWo2OXM2MXl1b3hiZ29oNTBxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nB8nDjCQMnp0xLvXfl/giphy.webp', // URL stiker dino kuning
+                        imageWidth: 400,
+                        imageHeight: 200,
+                        imageAlt: 'Happy Birthday Sticker',
+                        confirmButtonText: 'Oke'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire({
+                                title: 'Semoga panjang umur',
+                                imageUrl: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm1nbWo1Y3Z6d3hlbnR4djFubzM1M2dzcmR0NmhxdGoyanI1MGhmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/mBjFHo7PS1rkjf4OMT/giphy.webp', // URL stiker dino kuning
+                                imageWidth: 400,
+                                imageHeight: 200,
+                                imageAlt: 'Happy Birthday Sticker',
+                                confirmButtonText: 'Oke'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    Swal.fire({
+                                        title: 'Sehat Selalu',
+                                        imageUrl: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNncyOHZ4b2ZqZDc3OGQ2eDhhd3huZWw0dnFoaXVwMXl5cXBtY29vaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/sThlS7PKkYKXfZkeDE/giphy.webp', // URL stiker dino kuning
+                                        imageWidth: 400,
+                                        imageHeight: 200,
+                                        imageAlt: 'Happy Birthday Sticker',
+                                        confirmButtonText: 'Oke'
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            Swal.fire({
+                                                title: 'Digampangkan rezekinya',
+                                                imageUrl: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmtvOXRvanVkNDBiaXR5YnFoMzRrcHN0MzZyaW1lenI0bmZsd2JjNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qHbIOCU929bQ3QlcVU/giphy.webp', // URL stiker dino kuning
+                                                imageWidth: 400,
+                                                imageHeight: 200,
+                                                imageAlt: 'Happy Birthday Sticker',
+                                                confirmButtonText: 'Oke'
+                                            }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                    Swal.fire({
+                                                        title: 'Semoga dilancarin ngerjain tugas metlit, gadar, gerontik, sama ornik komunitasnya di Kiara Condong nanti',
+                                                        text: 'Semangat ajaa sii kata gue mah',
+                                                        imageUrl: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbml5ZTY4MnRiMzdpNW5wamdtcmY2bWpnOHZ3Y3pnYmJqYzRkbDRuaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/20gGxZfOeqCOJEXt8B/giphy.webp', // URL stiker dino kuning
+                                                        imageWidth: 400,
+                                                        imageHeight: 200,
+                                                        imageAlt: 'Happy Birthday Sticker',
+                                                        confirmButtonText: 'Oke'
+                                                    }).then((result) => {
+                                                        if (result.isConfirmed) {
+                                                            Swal.fire({
+                                                                title: 'Kita rayakan hari ulang tahunmu besok dengan seblak Bi Ai, okeyy!!!',
+                                                                imageUrl: 'https://media1.giphy.com/media/5fBH6zrcIiOs65zXCtG/giphy.webp?cid=82a1493bc92tblvgla712pyjqybw23dv9ha2juw07zj2lnx9&ep=v1_stickers_trending&rid=giphy.webp&ct=s', // URL stiker dino kuning
+                                                                imageWidth: 400,
+                                                                imageHeight: 200,
+                                                                imageAlt: 'Happy Birthday Sticker',
+                                                                confirmButtonText: 'Oke'
+                                                            }).then((result) => {
+                                                                if (result.isConfirmed) {
+                                                                    Swal.fire({
+                                                                        title: 'oiya satu lagi, aku mau bilang',
+                                                                        imageUrl: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDAyNDE1eDZ0ZW9kNXJmaXp0cWlkdzc4M3B5cHB3Z3FrajFlZXB3cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kFIYIHFBaa4rZl6MF2/giphy.webp', // URL stiker dino kuning
+                                                                        imageWidth: 400,
+                                                                        imageHeight: 200,
+                                                                        imageAlt: 'Happy Birthday Sticker',
+                                                                        confirmButtonText: 'Oke'
+                                                                    }).then((result) => {
+                                                                        if (result.isConfirmed) {
+                                                                            document.querySelector('.container').style.display = 'block';
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
